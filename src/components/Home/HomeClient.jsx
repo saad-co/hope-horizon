@@ -2,7 +2,7 @@ import React from 'react'
 
 const HomeClient = () => {
     return (
-        <div className='bg-white/50'>
+        <div className='bg-white/70'>
             <section className='min-h-full max-w-6xl mx-auto text-black pt-10 '>
                 <div className='flex flex-col gap-16'>
                     <div className='font-bold text-black text-center text-6xl text-wrap flex flex-col items-center justify-center'>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const LoginClientPage = () => {
     return (
-        <div className='bg-white/50 min-h-screen'>
+        <div className='bg-white/70 min-h-screen'>
             <section className='max-w-6xl mx-auto text-black pt-10 px-4'>
                 <div className='flex flex-col items-center space-y-6'>
                     <div className='text-center space-y-2'>
@@ -10,7 +10,7 @@ const LoginClientPage = () => {
                         <p className='text-red-500'>Fill in your information to get started</p>
                     </div>
 
-                    <div className='w-full max-w-md bg-white/50 rounded-lg shadow-lg p-6'>
+                    <div className='w-full max-w-md bg-white/70 rounded-lg shadow-lg p-6'>
                         <form className='space-y-6'>
                             <div className='space-y-2'>
                                 <label
