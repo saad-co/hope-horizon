@@ -1,4 +1,4 @@
-import RegisterClientPage from '../../components/register/RegisterClientPage';
+import RegisterClientPage from '@/components/Register/RegisterClientPage';
 import React from 'react'
 
 
