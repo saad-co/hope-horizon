@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useRef } from 'react'
+import React, { useRef } from 'react'
 import { FaGraduationCap, FaHeart, FaHandHoldingHeart, FaChevronLeft, FaChevronRight, FaBook, FaChild, FaHome, FaUtensils } from 'react-icons/fa'
 import DonationForm from '../general/DonationForm'
 
