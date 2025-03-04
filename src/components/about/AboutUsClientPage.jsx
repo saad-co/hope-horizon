@@ -140,19 +140,19 @@ const AboutPage = () => {
                     
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                         <TeamMember 
-                            name="Sarah Johnson"
+                            name="Hira Imran"
                             title="Executive Director"
                             bio="With over 15 years of nonprofit experience, Sarah leads our organization with passion and vision."
                         />
                         
                         <TeamMember 
-                            name="Michael Chen"
+                            name="Rana Saad"
                             title="Director of Programs"
                             bio="Michael oversees all our educational and community development initiatives across multiple regions."
                         />
                         
                         <TeamMember 
-                            name="Aisha Patel"
+                            name="Wajeeha Younas"
                             title="Chief Financial Officer"
                             bio="Aisha ensures financial transparency and maximizes the impact of every donation we receive."
                         />
