@@ -2,6 +2,8 @@
 import React, { useRef } from 'react'
 import { FaGraduationCap, FaHeart, FaHandHoldingHeart, FaChevronLeft, FaChevronRight, FaBook, FaChild, FaHome, FaUtensils } from 'react-icons/fa'
 import DonationForm from '../general/DonationForm'
+import Testimonial from '../general/Testimonial'
+import testimonials from '../../data/testimonials'
 
 const HomeClient = () => {
     const carouselRef = useRef(null);
@@ -23,13 +25,10 @@ const HomeClient = () => {
             {/* Hero Section */}
             <section className='min-h-screen max-w-6xl mx-auto text-white pt-10 relative'>
                 <div className='flex flex-col gap-16 px-4'>
-                    {/* Enhanced Header with Gradient */}
                     <div className='font-bold text-center text-6xl md:text-7xl text-wrap flex flex-col items-center justify-center'>
                         <h1 className='bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text'>Hope Horizon</h1>
                     </div>
-                    
                     <div className='flex flex-col gap-10 items-center'>
-                        {/* Main content with more catchy text */}
                         <div className='flex flex-col gap-7 text-center max-w-3xl'>
                             <div className='w-full flex flex-col gap-4'>
                                 <p className='font-bold text-white text-center text-4xl md:text-5xl drop-shadow-md'>
@@ -40,7 +39,6 @@ const HomeClient = () => {
                                 </p>
                             </div>
                             
-                            {/* Donation Form Component */}
                             <DonationForm />
                             
                             <div className='w-full text-center mt-4'>
@@ -53,13 +51,11 @@ const HomeClient = () => {
                 </div>
             </section>
             
-            {/* Carousel Section */}
             <section className='py-16 bg-gradient-to-b from-purple-900 to-indigo-900'>
                 <div className='max-w-6xl mx-auto px-4'>
                     <h2 className='text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text'>Our Programs</h2>
                     
                     <div className='relative'>
-                        {/* Carousel Navigation Buttons */}
                         <button 
                             onClick={scrollLeft} 
                             className='absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/10 hover:bg-white/20 text-white p-3 rounded-full shadow-lg backdrop-blur-sm'
@@ -74,13 +70,11 @@ const HomeClient = () => {
                             <FaChevronRight />
                         </button>
                         
-                        {/* Carousel Container */}
                         <div 
                             ref={carouselRef}
                             className='flex overflow-x-auto gap-6 pb-8 scrollbar-hide snap-x snap-mandatory'
                             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
                         >
-                            {/* Program Cards */}
                             <ProgramCard 
                                 icon={<FaBook />}
                                 title="Education Support"
@@ -120,7 +114,6 @@ const HomeClient = () => {
                 </div>
             </section>
             
-            {/* Impact Statistics Section */}
             <section className='py-16 bg-gradient-to-b from-purple-900 to-indigo-900'>
                 <div className='max-w-6xl mx-auto px-4'>
                     <h2 className='text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text'>Our Impact</h2>
@@ -153,8 +146,9 @@ const HomeClient = () => {
                 </div>
             </section>
             
+            {/* Testimonials Section */}
+            <Testimonial testimonials={testimonials} />
             
-            {/* Call to Action Section */}
             <section className='py-16 bg-gradient-to-b from-indigo-900 to-purple-900'>
                 <div className='max-w-6xl mx-auto px-4 text-center'>
                     <h2 className='text-4xl font-bold mb-8 bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text'>Join Our Mission Today</h2>

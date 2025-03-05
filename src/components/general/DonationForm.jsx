@@ -91,9 +91,9 @@ const DonationForm = () => {
             {/* Impact Message */}
             <div className='text-center text-gray-700 border-t border-gray-200 pt-4'>
                 <p>
-                    Your <span className='font-bold text-gray-800 border-b-2 border-yellow-400'>${getDisplayAmount()}.00</span> {donationType === 'monthly' ? 'monthly donation' : 'donation'} can give <span className='font-bold text-gray-800'>{Math.max(1, Math.floor(getDisplayAmount() / 3))}</span> people clean water every year.
+                    Your <span className='font-bold text-gray-800 border-b-2 border-yellow-400'>${getDisplayAmount()}.00</span> {donationType === 'monthly' ? 'monthly donation' : 'donation'} can provide <span className='font-bold text-gray-800'>{Math.max(1, Math.floor(getDisplayAmount() / 3))}</span> people a better life every year.
                 </p>
-                <p className='mt-1'>100% funds water projects.</p>
+                <p className='mt-1'>100% funds for people welfare.</p>
             </div>
             
             {/* Secure Payment */}
